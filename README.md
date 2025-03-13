@@ -80,14 +80,14 @@ auto-detect IMAP/SMTP settings without manual input.
 
 For maximum compatibility, **add the following DNS records** for each domain you want to auto-configure:
 
-autodiscover  CNAME  mail.yourdomain.com.
-autoconfig    CNAME  mail.yourdomain.com.
+- autodiscover  CNAME  mail.yourdomain.com.
+- autoconfig    CNAME  mail.yourdomain.com.
 
-_autodiscover._tcp  SRV  10 10 443  mail.yourdomain.com.
-_imaps._tcp         SRV  0 1 993  mail.yourdomain.com.
-_submission._tcp    SRV  0 1 587  mail.yourdomain.com.
-_carddavs._tcp      SRV  0 1 443  mail.yourdomain.com.
-_caldavs._tcp       SRV  0 1 443  mail.yourdomain.com.
+- _autodiscover._tcp  SRV  10 10 443  mail.yourdomain.com.
+- _imaps._tcp         SRV  0 1 993  mail.yourdomain.com.
+- _submission._tcp    SRV  0 1 587  mail.yourdomain.com.
+- _carddavs._tcp      SRV  0 1 443  mail.yourdomain.com.
+- _caldavs._tcp       SRV  0 1 443  mail.yourdomain.com.
 
 > **Note:** Replace `yourdomain.com` with the actual domain.
 
@@ -95,7 +95,7 @@ _caldavs._tcp       SRV  0 1 443  mail.yourdomain.com.
 
 ## Security & Deletion
 
-- **Delete** the `setup_autoconfig.php` script once everything is working. It’s only needed for initial setup.
+- **Delete** the `Autodiscover.php` script once everything is working. It’s only needed for the initial setup.
 - The generated `autodiscover.xml` and `autoconfig.xml` files do not contain any password details (only server settings), but it’s best practice to serve them over HTTPS.
   
 ---
