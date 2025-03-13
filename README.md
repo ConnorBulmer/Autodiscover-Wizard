@@ -55,7 +55,7 @@ auto-detect IMAP/SMTP settings without manual input.
 ## Installation
 
 1. **Download** or **clone** this repository.
-2. **Upload** the file `setup_autoconfig.php` (or similarly named script) to your domain’s
+2. **Upload** the file `Autodiscover.php` (or similarly named script) to your domain’s
    document root (`public_html/` on most shared hosts).
 3. (Optional) **Back up** your existing `.htaccess` file if you have a heavily customised version.
 
